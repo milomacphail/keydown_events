@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Draw me a picture.</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script> $(document).ready(function(){
+                    $("input").keydown(function(e){ 
+                    $("div").html("Thank you for typing the letter " + String.fromCharCode(e.which) + "! Have a great rest of your day.");
+                });
+            });
+                   $(document).ready(function(){
+                        $("input").keydown(function(e){
+                            $("body").css("background-color", "chartreuse");
+                        });
+                    });
+                    
+                    $(document).ready(function(){
+                        $("input").keyup(function(e){
+                            $("h1").css("background-color", "white");
+                        });
+                    });
+                    
+                    $(document).ready(function(){
+                        $("input").keypress(function(e){
+                            $("p").html("background-color", "yellow");
+                        });
+                    });
+                    
+                    $(document).ready(function(){
+                        $("input").keydown(function(e){
+                            $("p").html("Please stop typing.");
+                        });
+                    });
+                    
+          </script>
+        </head>
+        <body>
+            <h1>What letter did you just type?</h1>
+            <p>Please type a letter below.</p>
+            <input type="text">
+            <div />
+            <span id="message" />
+        </body>
+</html>
+    
